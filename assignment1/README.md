@@ -1,1 +1,3 @@
-<h1>My ASSIGNMENTS</h1>
+<h1>Assignment1</h1>
+
+image url example = http://host/public/myIamge.png
