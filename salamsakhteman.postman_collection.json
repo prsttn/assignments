@@ -1,0 +1,1344 @@
+{
+	"info": {
+		"_postman_id": "70ad0fe1-8018-4892-bb65-b05de7bc08ee",
+		"name": "salamsakhteman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"prsttn\",\n    \"password\": \"mypass\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/user/register",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"prsttn\",\n    \"password\": \"mypass\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/user/register",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"user",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "150"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"96-IEe4gJ7xZzr8JKIYPi3/wpd+Q58\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 Aug 2022 06:49:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"username\": \"prsttn\",\n    \"password\": \"$2b$10$0VpCtqMhp5OkukpQKPVnTOZ8yOrgjuNJDEzzw8ezTsW0YmMkdcNXW\",\n    \"role\": \"User\",\n    \"_id\": \"62f7498bfee811bb68ecc3c3\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"prsttn\",\n    \"password\": \"mypass\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/auth/login",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"prsttn\",\n    \"password\": \"mypass\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/auth/login",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "208"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d0-hk8DMhtrgb9sKBu5ZdD4if1wGV8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 Aug 2022 11:52:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"username\": \"prsttn\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3aG9hbWkiOiI2MmY3NDk4YmZlZTgxMWJiNjhlY2MzYzMiLCJpYXQiOjE2NjAzOTE1MjEsImV4cCI6MTY2NTU3NTUyMX0.abQgtgjxqUZBqdv0o8bO6PyL3Ly52qF5IKn_YAP6zFM\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "categorry",
+			"item": [
+				{
+					"name": "categories list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/category/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"category",
+								"list"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "categories list",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/category/list",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"category",
+										"list"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "145"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"91-D4bzO7CPflj46hGEr9wWXBYJmkI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 14 Aug 2022 07:01:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"categories\": [\n        {\n            \"_id\": \"62f8971d35403f6b7e7724bb\",\n            \"category_name\": \"vehicle\",\n            \"childs\": [\n                {\n                    \"_id\": \"62f8993e70a8c7229b3233ed\",\n                    \"category_name\": \"car\"\n                }\n            ]\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "create category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"category_name\": \"vehicle\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/category/create",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"category",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create category",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"category_name\": \"vehicle\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/category/create",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"category",
+										"create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "104"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"68-cyvdTugTrV1vMj/BGRY0d12VAlo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 14 Aug 2022 06:33:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"category\": {\n        \"category_name\": \"vehicle\",\n        \"parent_category\": null,\n        \"_id\": \"62f8971d35403f6b7e7724bb\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "dictionary",
+			"item": [
+				{
+					"name": "words list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/dictionary/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"dictionary",
+								"list"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "words list",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/dictionary/list",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"dictionary",
+										"list"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "172"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ac-OJDdo2W8tzJcidpV133Lt3CZhLg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 14 Aug 2022 17:47:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"words\": [\n        {\n            \"_id\": \"62f9350e02602b3bc5c4c1ea\",\n            \"latinName\": \"color\",\n            \"persianName\": \"رنگ\"\n        },\n        {\n            \"_id\": \"62f9350e02602b3bc5c4c1eb\",\n            \"latinName\": \"size\",\n            \"persianName\": \"اندازه\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "add words",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\n    [\n        {\n            \"latinName\": \"color\",\n            \"name\": \"رنگ\"\n        }, {\n            \"latinName\": \"size\",\n            \"name\": \"اندازه\"\n        }\n    ]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/dictionary/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"dictionary",
+								"add"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add words",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\n    [\n        {\n            \"latinName\": \"color\",\n            \"persianName\": \"رنگ\"\n        }, {\n            \"latinName\": \"size\",\n            \"persianName\": \"اندازه\"\n        }\n    ]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/dictionary/add",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"dictionary",
+										"add"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "187"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"bb-vKjHiGGYVUT5N7VoaFdkBo2l9g4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 14 Aug 2022 17:42:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"word\": [\n        {\n            \"latinName\": \"color\",\n            \"persianName\": \"رنگ\",\n            \"_id\": \"62f9340a3f4f14d807b23449\",\n            \"__v\": 0\n        },\n        {\n            \"latinName\": \"size\",\n            \"persianName\": \"اندازه\",\n            \"_id\": \"62f9340a3f4f14d807b2344a\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "good",
+			"item": [
+				{
+					"name": "goods list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/good/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"good",
+								"list"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "goods list",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/good/list",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"good",
+										"list"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "853"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"355-S8L+r9Wtpee9ETtOiv17QBHRzMM\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Aug 2022 12:25:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"goods\": [\n        {\n            \"_id\": \"62f9f9e79da15c3b7a978971\",\n            \"name\": \"207\",\n            \"image\": \"some.png\",\n            \"price\": 400000000,\n            \"category\": {\n                \"_id\": \"62f8993e70a8c7229b3233ed\",\n                \"category_name\": \"car\",\n                \"parent_category\": {\n                    \"_id\": \"62f8971d35403f6b7e7724bb\",\n                    \"category_name\": \"vehicle\"\n                }\n            },\n            \"details\": {\n                \"رنگ\": \"white\",\n                \"isAutomate\": false\n            }\n        },\n        {\n            \"_id\": \"62fa0d3131930d4e9c35c21e\",\n            \"name\": \"206\",\n            \"image\": \"some.png\",\n            \"price\": 400000000,\n            \"category\": {\n                \"_id\": \"62f8993e70a8c7229b3233ed\",\n                \"category_name\": \"car\",\n                \"parent_category\": {\n                    \"_id\": \"62f8971d35403f6b7e7724bb\",\n                    \"category_name\": \"vehicle\"\n                }\n            },\n            \"details\": {\n                \"رنگ\": \"red\",\n                \"isAutomate\": true\n            }\n        },\n        {\n            \"_id\": \"62fa3b241b74b7d8f499fa09\",\n            \"name\": \"ns7\",\n            \"image\": \"some.png\",\n            \"price\": 50000000,\n            \"category\": {\n                \"_id\": \"62fa3a321b74b7d8f499f9fa\",\n                \"category_name\": \"bicycle\",\n                \"parent_category\": {\n                    \"_id\": \"62f8971d35403f6b7e7724bb\",\n                    \"category_name\": \"vehicle\"\n                }\n            },\n            \"details\": {\n                \"رنگ\": \"red\",\n                \"اندازه\": \"large\"\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "filter goods ",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"details\": {\n        \"color\": \"white\"\n    },\n    \"minPrice\": 410000000,\n    \"maxPrice\": 430000000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/good/filter",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"good",
+								"filter"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "filter goods ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"details\": {\n        \"color\": \"red\"\n    },\n    \"minPrice\": 300000000,\n    \"maxPrice\": 410000000\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/good/filter",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"good",
+										"filter"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "288"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"120-E6ndnfcBgdWrHzJzEfXYOfDACoI\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Aug 2022 12:41:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"goods\": [\n        {\n            \"_id\": \"62fa0d3131930d4e9c35c21e\",\n            \"name\": \"206\",\n            \"image\": \"some.png\",\n            \"price\": 400000000,\n            \"category\": {\n                \"_id\": \"62f8993e70a8c7229b3233ed\",\n                \"category_name\": \"car\",\n                \"parent_category\": {\n                    \"_id\": \"62f8971d35403f6b7e7724bb\",\n                    \"category_name\": \"vehicle\"\n                }\n            },\n            \"details\": {\n                \"رنگ\": \"red\",\n                \"isAutomate\": true\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "count goods by category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/good/stats",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"good",
+								"stats"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "count goods by category",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/good/stats",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"good",
+										"stats"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "63"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3f-Z4brhJuveAdopeFm/Y+6JpAQjZE\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Aug 2022 12:26:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"stats\": [\n        {\n            \"count\": 1,\n            \"_id\": \"bicycle\"\n        },\n        {\n            \"count\": 2,\n            \"_id\": \"car\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "get translated good by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"_id\": \"62fa0d3131930d4e9c35c21e\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/good/translated-details",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"good",
+								"translated-details"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get good details for viewing",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"_id\": \"62f9496f02602b3bc5c4c1f4\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/good/translated-details",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"good",
+										"translated-details"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "279"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"117-jfKB0aEOeaq9JUoejuSNH4JIw2U\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 14 Aug 2022 19:19:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"62f9496f02602b3bc5c4c1f4\",\n    \"name\": \"207\",\n    \"image\": \"some.png\",\n    \"price\": 410000000,\n    \"category\": {\n        \"_id\": \"62f8993e70a8c7229b3233ed\",\n        \"category_name\": \"car\",\n        \"parent_category\": {\n            \"_id\": \"62f8971d35403f6b7e7724bb\",\n            \"category_name\": \"vehicle\"\n        }\n    },\n    \"details\": {\n        \"رنگ\": \"white\",\n        \"isAutomate\": false\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "add good",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"207\",\n    \"price\": 400000000,\n    \"image\": \"some.png\",\n    \"details\": {\n        \"color\": \"white\",\n        \"isAutomate\": false\n    },\n    \"category\": \"62f8993e70a8c7229b3233ed\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/good/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"good",
+								"add"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add good",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"207\",\n    \"price\": 400000000,\n    \"image\": \"some.png\",\n    \"details\": {\n        \"color\": \"white\",\n        \"isAutomate\": false\n    },\n    \"category\": \"62f8993e70a8c7229b3233ed\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/good/add",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"good",
+										"add"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "252"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"fc-5K77AN677pedVE5fsToTGWWIiTk\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 14 Aug 2022 19:13:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"good\": {\n        \"name\": \"207\",\n        \"image\": \"some.png\",\n        \"price\": 400000000,\n        \"details\": {\n            \"color\": {\n                \"value\": \"white\",\n                \"translatedKey\": \"رنگ\"\n            },\n            \"isAutomate\": {\n                \"value\": false,\n                \"translatedKey\": null\n            }\n        },\n        \"category\": \"62f8993e70a8c7229b3233ed\",\n        \"_id\": \"62f9496f02602b3bc5c4c1f4\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "remove good",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"_id\": \"62f9496f02602b3bc5c4c1f4\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/good/remove",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"good",
+								"remove"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "remove good",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"_id\": \"62f9496f02602b3bc5c4c1f4\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/good/remove",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"good",
+										"remove"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "252"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"fc-kQu9MbN21T86wClz/xq96A3qZA8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 14 Aug 2022 19:20:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"good\": {\n        \"_id\": \"62f9496f02602b3bc5c4c1f4\",\n        \"name\": \"207\",\n        \"image\": \"some.png\",\n        \"price\": 410000000,\n        \"details\": {\n            \"color\": {\n                \"value\": \"white\",\n                \"translatedKey\": \"رنگ\"\n            },\n            \"isAutomate\": {\n                \"value\": false,\n                \"translatedKey\": null\n            }\n        },\n        \"category\": \"62f8993e70a8c7229b3233ed\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get original good by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"_id\": \"62f9496f02602b3bc5c4c1f4\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/good/original-details",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"good",
+								"original-details"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get original good by id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"_id\": \"62f9496f02602b3bc5c4c1f4\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/good/original-details",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"good",
+										"original-details"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "278"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"116-uLj10rSt3imt6TA63dbZ4tYS6kc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 14 Aug 2022 19:17:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"62f9496f02602b3bc5c4c1f4\",\n    \"name\": \"207\",\n    \"image\": \"some.png\",\n    \"price\": 410000000,\n    \"category\": {\n        \"_id\": \"62f8993e70a8c7229b3233ed\",\n        \"category_name\": \"car\",\n        \"parent_category\": {\n            \"_id\": \"62f8971d35403f6b7e7724bb\",\n            \"category_name\": \"vehicle\"\n        }\n    },\n    \"details\": {\n        \"color\": \"white\",\n        \"isAutomate\": false\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "edit good",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{        \n    \"_id\": \"62f9496f02602b3bc5c4c1f4\",\n    \"name\": \"207\",\n    \"price\": 410000000,\n    \"image\": \"some.png\",\n    \"details\": {\n        \"color\": \"white\",\n        \"isAutomate\": false\n    },\n    \"category\": \"62f8993e70a8c7229b3233ed\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/good/edit-details",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"good",
+								"edit-details"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "edit good",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{        \n    \"_id\": \"62f9496f02602b3bc5c4c1f4\",\n    \"name\": \"207\",\n    \"price\": 410000000,\n    \"image\": \"some.png\",\n    \"details\": {\n        \"color\": \"white\",\n        \"isAutomate\": false\n    },\n    \"category\": \"62f8993e70a8c7229b3233ed\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/good/edit-details",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"good",
+										"edit-details"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "252"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"fc-kQu9MbN21T86wClz/xq96A3qZA8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 14 Aug 2022 19:16:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"good\": {\n        \"_id\": \"62f9496f02602b3bc5c4c1f4\",\n        \"name\": \"207\",\n        \"image\": \"some.png\",\n        \"price\": 410000000,\n        \"details\": {\n            \"color\": {\n                \"value\": \"white\",\n                \"translatedKey\": \"رنگ\"\n            },\n            \"isAutomate\": {\n                \"value\": false,\n                \"translatedKey\": null\n            }\n        },\n        \"category\": \"62f8993e70a8c7229b3233ed\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "upload",
+			"item": [
+				{
+					"name": "upload image",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/prsttn/Desktop/cat edit job.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/file-upload",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"file-upload"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "upload image",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/home/prsttn/Desktop/cat edit job.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/file-upload",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"file-upload"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "34"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"22-XvybA9NXAhtjj8RjKOU2xjDs5fU\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Aug 2022 13:11:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"path\": \"public/cat edit job.png\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "test admin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3aG9hbWkiOiI2MmY3NTdmODk3N2E5YzA3NDNiNWExZTEiLCJpYXQiOjE2NjA1NjU5ODcsImV4cCI6MTY2NTc0OTk4N30.aSzdGdE55rKW7WME01ONiEqTSvbwAinf6kdYS482dhY",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
