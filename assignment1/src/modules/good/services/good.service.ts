@@ -187,12 +187,7 @@ export class GoodService {
 
   async countGoodsByCategory(): Promise<any> {
     const stats = await this.goodModel.aggregate([
-      {
-        $group: {
-          _id: '$category',
-          count: {$sum: 1}
-        },
-      },
+      {$sortByCount: '$category'},
       {
         $lookup: {
           from: 'categories',
@@ -201,14 +196,24 @@ export class GoodService {
           foreignField: '_id'
         },
       },
-      {$unwind: '$_id'},
       {
         $project: {
-          _id: '$_id.category_name',
+          _id: {$first :'$_id.category_name'},
           count: 1
         }
       }
     ]);
+
+    /*
+
+
+    const stats_v2 = await this.goodModel.aggregate().sortByCount('category')
+    .lookup({from: 'categories', as: '_id', localField: '_id', foreignField: '_id'})
+    .project({_id: {$first :'$_id.category_name'}, count: 1});
+    
+    
+    */
+    
     return stats;
   }
 }
