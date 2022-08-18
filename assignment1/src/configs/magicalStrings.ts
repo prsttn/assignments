@@ -6,4 +6,4 @@ export const magicalStrings = {
   categoryModel: 'CATEGORY_MODEL',
   AdminRole: 'Admin',
   UserRole: 'User',
-}
+};

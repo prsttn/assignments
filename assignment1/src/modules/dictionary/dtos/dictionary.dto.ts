@@ -1,12 +1,11 @@
-import { IsNotEmpty, IsString } from "class-validator";
-
+import {IsNotEmpty, IsString} from 'class-validator';
 
 export class AddWordDto {
   @IsString()
   @IsNotEmpty()
-  latinName: String;
+  latinName: string;
 
   @IsString()
   @IsNotEmpty()
-  persianName: String;
+  persianName: string;
 }

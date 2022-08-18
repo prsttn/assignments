@@ -1,10 +1,9 @@
-
-import { Document } from 'mongoose';
+import {Document} from 'mongoose';
 
 export interface GoodDetails {
   readonly key: string;
   readonly value: any;
-  readonly translatedKey: String;
+  readonly translatedKey: string;
 }
 
 interface Category {
@@ -15,9 +14,8 @@ interface Category {
 
 export interface Good extends Document {
   readonly name: string;
-  readonly details: Map<String, GoodDetails>;
+  readonly details: Map<string, GoodDetails>;
   readonly category: Category;
   readonly image: string;
   readonly price: number;
 }
-
